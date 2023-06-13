@@ -1,0 +1,26 @@
+header{
+    background-color: #C39A7A;
+    padding: 20px 0;
+}
+.sect1{
+	display: flex;
+	justify-content:center;
+    margin: 0 auto;
+}
+#logo{
+    width: 30%;
+}
+.bar{
+    background-color: #DBD0C5;
+    
+}
+.bar a{
+    text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background: #DBD0C5;
+}
