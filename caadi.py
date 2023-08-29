@@ -20,23 +20,7 @@ class Window(tk.Tk):
         self.main_panel = ttk.PanedWindow(orient="vertical")
         self.horiz_panel = ttk.PanedWindow(orient="horizontal")
 
-        # Define what our upper main_panel is composed of
-            #Frame that stores our components
-        self.header_frame = tk.Frame(self.main_panel,bg="#1A1713",borderwidth=0)
-            #Load the image
-        self.image1_path = "./img/escudo_ug.png"  
-        self.image1 = Image.open(self.image1_path)
-        self.image1 = self.image1.resize((70, 80))  
-            #Create a PhotoImage object from the image
-        self.photo1 = ImageTk.PhotoImage(self.image1)
-            # Create a Label widget to display the image
-        self.image1_label = tk.Label(self.header_frame, image=self.photo1)
-        self.image1_label.pack(side="top",padx=10)
-        
-        # Add our components to main_panel
-        self.main_panel.add(self.header_frame)
-        
-        # Define what our lower main_panel is composed of
+        # Define what our main_panel is composed of
             #Frame that stores our components
         self.side_frame = tk.Frame(self.horiz_panel,bg="#DBD0C5")
             #Button
